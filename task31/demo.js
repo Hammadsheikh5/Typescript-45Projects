@@ -1,6 +1,6 @@
 // Array of usernames
 var usernames = ['Admin', 'Hamza', 'Umer', 'Ayesha', 'Urooj'];
-usernames = [];
+usernames = []; //comment
 // check array is empty or not?
 if (usernames.length === 0) {
     console.log("We need to find some users!");
