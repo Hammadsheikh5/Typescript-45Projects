@@ -1,12 +1,18 @@
-// Define a function 
-function show_magicians(magicians: string[]): void {
+// Define the function to show magicians names
+function show_magicians(magicians: string[]){
     magicians.forEach(name => console.log(name));
 }
 
-// Function to make magicians great
-function make_great(magicians: string[]): string[] {
-    return magicians.map(name => `the Great ${name}`);
+// Function to make magicians great through .map() it will modify array
+function make_great(magicians: string[]){
+    return magicians.map(name => `The Great ${name}`);
 }
 
-//Define an array
-let magician_names: string[] = ["John", "Tonnny", "Claire", "Micheal"];
+// Define an array of magicians names
+let magician_names = ["Harry Poter", "Hammad", "Usman"];
+
+// Call make_great funbction to modify magicians names
+let great_magicians = make_great(magician_names);
+
+// Call show_magicians that show modified list of magicians
+show_magicians(great_magicians);
